@@ -21,10 +21,10 @@ app.get('/*', (req, res) => {
 })
 
 app.post('/*', (req, res) => {
-    var parthname = url.parse(req.url).pathname;
+    var pathname = url.parse(req.url).pathname;
 
     var obj = {
-        parthname: pathname,
+        pathname: pathname,
         method: 'post',
         params: req.body
     }
