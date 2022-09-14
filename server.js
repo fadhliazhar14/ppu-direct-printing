@@ -11,7 +11,7 @@ app.get('/*', (req, res) => {
     var pathname = url.parse(req.url).pathname;
 
     var obj = {
-        parthname: pathname,
+        pathname: pathname,
         method: 'get',
         params: req.query
     }
