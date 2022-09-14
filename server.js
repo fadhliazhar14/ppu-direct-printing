@@ -8,7 +8,7 @@ app.use(bodyParser());
 
 var clientResponseRef;
 app.get('/*', (req, res) => {
-    var parthname = url.parse(req.url).pathname;
+    var pathname = url.parse(req.url).pathname;
 
     var obj = {
         parthname: pathname,
