@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
     })
 })
 
-var server_port = process.env.PORT || 3000;
+var server_port = process.env.PORT || 5000;
 http.listen(server_port, () => {
     console.log('listening on *:' + server_port);
 })
